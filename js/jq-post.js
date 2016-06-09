@@ -10,7 +10,9 @@ $(document).ready(function()                           //run this function only 
         var details = $('#register').serialize();         // Serialize form data
         $.post('contact.php', details, function(data)    // Use $.post() to send it
         {
-            $('#register').html(data);                       // Where to display result
+            alert(data);
+            console.log(data);
+            // $('#register').html(data);                       // Where to display result
         })
             .fail( function()                                                  // THERE IS AN ERROR
             {
